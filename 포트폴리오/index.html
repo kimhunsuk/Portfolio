@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+<style>
+
+ul{list-style: none;}
+*{margin: 0%; padding: 0%;}
+/* 메인 텍스트 부분 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap');
+#maintext{width: 820px; height: 110px; margin: 200px auto 100px auto;}
+.fontspan{font-family: 'Noto Sans JP', sans-serif; font-weight: bolder; font-size: 100px;color: white;}
+.fontspan{transition: 2.5s;}
+.fontspan:hover{
+            filter: blur(30px);
+            opacity: 0%;
+        }
+/* 스크롤 픽토그램 */
+#painting{width: 50px; height: 80px; border: 1px solid #fff;margin: 0% auto; border-radius: 25px; color: white; font-size: 100px;position: relative;}
+#painting>p{position: absolute; top: -90px; left:13.5px; animation:animationName 1s 0s infinite ease-in-out alternate;}
+@keyframes animationName {
+	100%{top: -90px; }	
+   	40%{opacity: 0%;}
+    0%{top: -20px; opacity: 0%;}
+        
+		
+		
+}
+/* 레이아웃 */
+ html,body{margin: 0; width: 100%; overflow:auto;}
+ body{background:url(img/wallpapertip_aviation-wallpaper_955630.jpg) no-repeat; background-size: 100%; margin: 0% auto; }
+ #layout{width: 100%; height: 3000px; margin-top: 700px; transition: 0.5s; background-color:white; font-family: 'Noto Sans JP', sans-serif; font-weight: bold;}
+ #container{margin: 0% auto; width: 100%;height: 800px;background-color:#b3d5fd;}
+ #contant{margin-top: 80px; width: 1400px; margin: 0% auto;}
+/* container부분 */
+ /* 메뉴 내용*/
+ #info{width: 500px; height: 500px; float: left; box-sizing: border-box;  background-color: #b3d5fd;position: relative; margin-top: 180px; margin-left: 70px;}
+ #info>p{height: 100px; box-sizing: border-box;margin: 0%;text-align: left; width: 290px;margin: 30px auto 0px auto;font-size: 25px;} 
+ #seleccontry{width: 307px;height: 40px;display:inline-block;margin: 10px 0px 15px 0px; outline: none; border: none;}
+ select{width: 150px; height: 35px;}
+ button{width: 150px;height: 30px;}
+ /* 메뉴 제목 */
+ #titlebox{width: 500px;height: 80px;box-sizing: border-box;}
+ .title{ width: 100px; height: 50px; text-align: center;  position: absolute;box-sizing: border-box; cursor: pointer; } 
+ #title1{left: 100px; border-bottom: 1px solid #000;}
+ #title2{left: 200px;border-bottom: 1px solid #000;}
+ #title3{left: 300px;border-bottom: 1px solid #000;}
+ #title1>p{padding: 10px;}
+ #title2>p{padding: 10px;}
+ #title3>p{padding: 10px;}
+/* 메뉴 내용 */
+.menu{position: absolute; width: 500px; height: 318px; box-sizing: border-box; top: 180px; background-color: #b3d5fd;} 
+ #menu1{z-index: 3; }
+ #menu2{z-index: 2;}
+ #menu3{z-index: 1;}
+ 
+#xxx{float: right;}
+ #menu1>form>table{margin: 0% auto;}
+ #menu2>form>table{margin: 0% auto;}
+ #menu3>form>table{margin: 0% auto;}
+ #contant::after{clear: both;display: table;content: "";}
+
+/* 여행지 선택지 */
+ #selectcitybox{width: 800px;height: 700px; background-color: white; z-index: 10; position: absolute; top: 260px; left: 95px;display: none;border: 1px solid #000;}
+ #selectcitybox>#selectcitytext{width: 700px; height: 70px; border: 1px solid #000; margin: 10px auto; text-align: center; font-size: 30px;}
+ #selectcitybox>#selcetcontry>div{width: 200px;height: 70px; border: 1px solid #000;margin: 0px 0px 0px 49px;cursor: pointer; background-color:rgb(243, 243, 243);}
+ #selectcitybox>#selcetcontry>div>p{margin-top: 25px;}
+ .selcetcity{width: 500px; height: 502px; background-color:white; position: absolute; z-index:10; top: 92px;right: 48px; border: 1px solid #000;}
+ #selcetcity1{z-index: 11;}
+ .selcetcity>table>tbody>tr>td{display: inline-block;width: 230px;height: 80px;}
+ 
+ /* 이미지 슬라이더 */
+ .imgsliderlayout{width: 700px;height: 700px;  box-shadow: 6px 1px 10px #000; position: relative; float: left; margin: 50px; overflow: hidden;}
+ .slide{position: absolute; width: 7000px;  transform: translateX(-700px);}
+ .tranform0{transition: 0.5s;}
+ .slide>li{float: left;}
+ .slide>li>img{width: 700px;height: 700px;}
+ .imgsliderlayout{clear: both;display: table;content: "";}
+ /* map내용 */
+ #map{ width: 900px; height: 500px; ; box-sizing: border-box; position: relative; margin: 50px auto ; }
+ #map>h1{position: absolute;  left: -100px; top: -50px;}
+ #rus{width: 350px; position: absolute; right: 370px; transition: 1s; cursor: pointer;}
+ #jep{width: 150px; position: absolute; top: 210px;right: 200px;transition: 1s; cursor: pointer;}
+ #cha{width: 200px; position: absolute; top: 140px;right: 410px;transition: 1s; cursor: pointer;}
+ #aus{width: 150px; position: absolute; top: 350px;right: 330px;transition: 1s; cursor: pointer;}
+ #us{width: 230px; position: absolute; top: 0px;right: 20px;transition: 1s; cursor: pointer;}
+ #eu{width: 150px; position: absolute; top: 100px;right: 700px;transition: 1s; cursor: pointer;}
+ /* map클릭시 나오는것 */
+ #rusvideo{ position: absolute; right: 600px;  bottom:0px;}
+ #jepvideo{ position: absolute; right: 300px; bottom:40px;}
+ #chavideo{ position: absolute; right: 600px;top: 0px; }
+ #usvideo{ position: absolute; right: 200px; bottom: 0px;}
+ #euvideo{ position: absolute; right: 800px; bottom: -100px;}
+ #ausvideo{ position: absolute; right: 450px; bottom:-80px; }
+ #ausvideo,#euvideo,#usvideo,#chavideo,#jepvideo,#rusvideo{ width: 460px; height: 600px;background-color: #F14C2E; text-align: center;z-index: 999; transition: 0.5s; pointer-events: none;opacity: 0%; }
+ .divlayout{float: left; margin: 10px 15px 10px 18px; width: 80px; text-align: center;}
+ .mapinimg{width:80px;height: 80px; border-radius:10px; box-shadow: 6px 1px 10px;}
+ /* 이미지 슬라이더 화살표 */
+   .arrow.right{position: absolute; right: 50px; top: 350px; cursor: pointer;}
+   .arrow.left{position: absolute;  left: 50px; top: 350px; cursor: pointer;}
+   .arrow.left, .arrow.right { width: 20px; height: 10px;}
+   .arrow:after { content: ''; position: absolute; width: 0;height: 0; border-style: solid;}
+   .arrow.left:after {top: -10px;left: -40px; border-width: 15px 20px;border-color: transparent #D7EAFF transparent transparent; }
+   .arrow.right:after {top: -10px;left: 20px;border-width: 15px 20px;border-color: transparent transparent transparent #D7EAFF;}
+
+/* 이벤트안내 */
+.eventboxlayout{width: 1400px; height: 800px; position: relative;margin: 0px auto;}
+.main{width: 500px; height: 600px; border: 1px solid #000; position: absolute; top: 100px; left: 70px;}
+.side{position: absolute; width: 300px; height: 450px;  border: 1px solid #000; left: 370px; top: 180px;}
+.side>div{width: 100%; height: 225px;}
+.side>div>img{width: 100%; height: 100%;}
+.side>div>p{width: 100%; height: 100%;background-color: white;}
+.side1{position: absolute; width: 300px; height: 450px;  border: 1px solid #000; left: 700px; top: 180px;}
+.side1>div{width: 100%; height: 225px;}
+.side1>div>img{width: 100%; height: 100%;}
+.side1>div>p{width: 100%; height: 100%;background-color: white;}
+.side2{position: absolute; width: 300px; height: 450px;  border: 1px solid #000; left: 1030px; top: 180px;}
+.side2>div{width: 100%; height: 225px;}
+.side2>div>img{width: 100%; height: 100%;}
+.side2>div>p{width: 100%; height: 100%;background-color: white;}
+/* 네비게이션 */
+.mainmenu{width: 70px; height: 70px; background-color: burlywood; position: fixed; bottom: 50px; right: 135px; border-radius: 50px;z-index: 999999;} 
+.line{border-bottom: 4px solid white; width: 50px; margin-top: 15px; margin-left: 9px; transition: 0.5s;}
+#mainmenubox{width: 350px;height: 950px; position: fixed; bottom: 0px;right: -350px; background-color: tan; transition: 0.5s;z-index: 99999;}
+/* 트래블메뉴 */
+.main{background: url(img/aaaaa.jpg) no-repeat;background-size: 100% 100%; margin: 0% auto;}
+.mainbut{display: block;margin: 50px; border-radius: 25px;height: 40px;  margin-left: 70px;}
+.mainbutmargin{margin-top: 180px;}
+/* 호텔과 가격 추천메뉴 */
+#cardlayout{width: 1400; height: 500px; background-color: rgb(25, 91, 255);  position: relative;}
+.cardlayout{width: 1200px; height: 500px; margin: 0% auto;perspective: 1000px; transform-style: preserve-3d;}
+.hovercard{width: 300px; height: 300px;float:left; margin: 100px 48px 50px 48px; transition: 1s; box-sizing: border-box;}
+.card{transition: 1s; width: 296px; height: 300px;box-sizing: border-box;}
+.cardbox{width: 296px; height: 300px;position: absolute;}
+.front{ transition: 1s;}
+.front1{background: url(img/hotelin.jpg);background-size:cover;}
+.front2{background: url(img/hotelin.jpg);background-size:cover;}
+.front3{background: url(img/hotelin.jpg);background-size:cover;}
+.back{background-color: rgb(151, 151, 250); backface-visibility: hidden; transition: 1s;}
+.back1{background: url(img/hotel.jpg);background-size:cover;}
+.back2{background: url(img/hotel2.jpg);background-size:cover;}
+.back3{background: url(img/hotel3.jpg);background-size:cover; background-color: #FFE7E2 }
+
+</style>
+</head>
+<body>
+   
+    <div id="maintext"><span class="fontspan">U</span><span class="fontspan">L</span><span class="fontspan">S</span><span class="fontspan">A</span><span class="fontspan">N</span><span class="fontspan">&nbsp;</span><span class="fontspan">A</span><span class="fontspan">I</span><span class="fontspan">R</span><span class="fontspan">P</span><span class="fontspan">L</span><span class="fontspan">A</span><span class="fontspan">N</span><span class="fontspan">E</span></div>
+    <!-- 메인 로고 텍스트 -->
+    <div id="painting"><p >.</p></div>
+    <!-- 스크롤 픽토그램 -->
+
+    <div id="layout" >
+        
+    <div id="container">
+
+        <div id="contant">
+            <div id="info">
+                <!-- 메뉴 -->
+                <p>고객님,<br>
+                     어떤 여행을 꿈 꾸시나요</p>
+    <div id="titlebox">
+     <div class="title" id="title1"><p>패키지</p></div>
+     <div class="title" id="title2"><p>항공</p></div>
+     <div class="title" id="title3"><p>호텔</p></div>
+    </div>
+                <div id="menu1" class="menu">
+                    <form action="">
+                       <table>
+                           <tr>
+                               <td colspan="3">
+                                   <input type="text" id="seleccontry" placeholder="어디로 떠나세요?">
+                               </td>
+                           </tr>
+
+                           <tr>
+                              
+                               <td>
+                                   <select style="border: none;">
+                               <option value="제주도">인천/김포 출발</option>
+                               <option value="제주도">부산 출발</option>
+                               <option value="제주도">대구 출발</option>
+                               <option value="제주도">청주 출발</option>
+                               <option value="제주도">광주 출발</option>
+                               <option value="제주도">제주 출발</option>
+                               <option value="제주도">양양 출발</option>
+                               <option value="제주도">강원 출발</option>
+                                  </select>
+                                  <select style="border: none;">
+                               <option value="제주도">제주도</option>
+                               <option value="제주도">제주도</option>
+                               <option value="제주도">제주도</option>
+                               <option value="제주도">제주도</option>
+                                  </select >
+                              </td>
+                              
+                        </tr>
+                        <tr></tr>
+                           <tr>
+                               
+                               <td colspan="2" style="margin-left: 75px;display: block;margin-top: 10px;"><button style="border: none; border-radius: 10px;height: 40px;">패키지검색</button></td>
+                               
+                           </tr>
+                       </table>
+                    </form>
+                </div>
+
+                <div id="menu2"class="menu">
+                    <form action="">
+                         <table>
+                          <tr><td><input type="text" id="pack" ></td></tr>
+                           <tr><td><input type="text" id="pack" ></td></tr>
+                           <tr><td><button style="border: none; border-radius: 10px;height: 40px;">항공권검색</button></td></tr>
+                        </table>
+                    </form>
+                </div>
+               
+                <div id="menu3"class="menu">
+                    <form action="">
+                        <table>
+                        <tr><td><input type="text" id="pack" ></td></tr>
+                        <tr><td><input type="text" id="pack" ></td></tr>
+                        <tr><td><button style="border: none; border-radius: 10px;height: 40px;">숙소검색</button></td></tr>
+                    </table>
+                    </form>
+                </div>
+               <!-- 메뉴 안의 창 -->
+               <div id="selectcitybox">
+                   <div id="selectcitytext"><p>주요도시</p></div>
+                   <div id="selcetcontry">
+                       <div class="selcetcontryclass"><p>국내</p> </div>
+                       <div class="selcetcontryclass"><p>동남아/대만/서남아</p></div>
+                       <div class="selcetcontryclass"><p>중국/홍콩/극동러시아</p></div>
+                       <div class="selcetcontryclass"><p>일본</p></div>
+                       <div class="selcetcontryclass"><p>유럽/아프리카</p></div>
+                       <div class="selcetcontryclass"><p>남태평양/호주/뉴질랜드</p></div>
+                       <div class="selcetcontryclass"><p>미주/중남미/하와이</p></div>
+                       
+                </div>
+                <div class="selcetcity trmargin0" id="selcetcity1">
+                     <table>
+                    <tr>
+                        <td>제주도</td> <td>부산</td>
+                    </tr>
+                    <tr>
+                        <td>강원도</td> <td>경상북도</td>
+                    </tr>
+                    <tr>
+                        <td>경상남도</td> <td>전라북도</td>
+                    </tr>
+                    <tr>
+                        <td>전라남도</td> <td>충청북도</td>
+                    </tr>
+                    <tr>
+                        <td>충청남도</td> <td>인천</td>
+                    </tr>
+                </table> 
+            </div>
+               
+            <div class="selcetcity">
+                    <table>
+                        <tr>
+                            <td>보라카이</td> <td>세부</td>
+                        </tr>
+                        <tr>
+                            <td>방콕</td> <td>타이페이</td>
+                        </tr>
+                        <tr>
+                            <td>하노이</td> <td>다낭</td>
+                        </tr>
+                        <tr>
+                            <td>푸껫</td> <td>싱가포르</td>
+                        </tr>
+                        <tr>
+                            <td>코타키나발루</td> <td>바비엥</td>
+                        </tr>
+                    </table> 
+            </div>
+            <div class="selcetcity"> 
+                <table>
+                    <tr>
+                        <td>북경</td> <td>상해</td>
+                    </tr>
+                    <tr>
+                        <td>홍콩</td> <td>마카오</td>
+                    </tr>
+                    <tr>
+                        <td>삼아</td> <td>장가계</td>
+                    </tr>
+                    <tr>
+                        <td>태항산</td> <td>계림</td>
+                    </tr>
+                    <tr>
+                        <td>곤명</td> <td>여강</td>
+                    </tr>
+                </table> 
+
+            </div>
+            <div class="selcetcity">
+                <table>
+                    <tr>
+                        <td>오사카</td> <td>도쿄</td>
+                    </tr>
+                    <tr>
+                        <td>후쿠오카</td> <td>삿포로</td>
+                    </tr>
+                    <tr>
+                        <td>오키나와</td> <td>나고야</td>
+                    </tr>
+                    <tr>
+                        <td>아오모리</td> <td>시즈오카</td>
+                    </tr>
+                    <tr>
+                        <td>도야마</td> <td>요나고</td>
+                    </tr>
+                </table> 
+            </div>
+            <div class="selcetcity"> 
+                <table>
+                    <tr>
+                        <td>런던</td> <td>에든버러</td>
+                    </tr>
+                    <tr>
+                        <td>파리</td> <td>니스</td>
+                    </tr>
+                    <tr>
+                        <td>취리히</td> <td>인터라켄</td>
+                    </tr>
+                    <tr>
+                        <td>로마</td> <td>베네치아</td>
+                    </tr>
+                    <tr>
+                        <td>프랑크푸르트</td> <td>베를린</td>
+                    </tr>
+                </table> 
+            </div>
+            <div class="selcetcity">
+                <table>
+                    <tr>
+                        <td>괌</td> <td>팔라우</td>
+                    </tr>
+                    <tr>
+                        <td>난디</td> <td>시드니</td>
+                    </tr>
+                    <tr>
+                        <td>케언즈</td> <td>크라이스트처치</td>
+                    </tr>
+                    <tr>
+                        <td>로토루아</td> <td>브리즈번</td>
+                    </tr>
+                    <tr>
+                        <td>에이즈 록</td> <td>사이판</td>
+                    </tr>
+                </table> 
+             </div>
+            <div class="selcetcity"> 
+                <table>
+                    <tr>
+                        <td>시에틀</td> <td>센프란시스코</td>
+                    </tr>
+                    <tr>
+                        <td>로스엔젤레스</td> <td>라스베이거스</td>
+                    </tr>
+                    <tr>
+                        <td>그랜드캐년</td> <td>뉴욕</td>
+                    </tr>
+                    <tr>
+                        <td>워싱턴</td> <td>마이애미</td>
+                    </tr>
+                    <tr>
+                        <td>뉴보스턴</td> <td>벤쿠버</td>
+                    </tr>
+                </table> 
+            </div>
+
+            </div>
+
+            </div>
+                  <div id="xxx">
+                <div class="imgsliderlayout">
+                    <ul class="slide ">
+                        <li><img src="img/c.png" alt=""></li>
+                        <li><img src="img/a.png" alt=""></li>
+                        <li><img src="img/b.png" alt=""></li>
+                        <li><img src="img/c.png" alt=""></li>
+                        <li><img src="img/a.png" alt=""></li>
+                    </ul>
+                    <span class="arrow right" ></span>
+                    <span class="arrow left"></span>
+                  </div>
+                </div>
+        </div>
+     
+        <div id="map">
+            <h1>지도로 보는 세계 유명 관광지</h1>
+            <img id="rus" src="img/rus.png" alt="">
+            <img id="jep" src="img/jep.png" alt="">
+            <img id="cha" src="img/cha.png" alt="">
+            <img id="us" src="img/us.png" alt="">
+            <img id="aus" src="img/aus.png" alt="">
+            <img id="eu" src="img/eu.png" alt="">
+            <div id="rusvideo">
+                <iframe id="video1" width="460" height="200" src="https://www.youtube.com/embed/5dJ9hb__GQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="transition:0.5s;pointer-events: none;"></iframe>
+                <div><p>러시아의 국가 면적은 17,125,191 km2으로 세계에서 가장 거대한 국가이다. 다만 국토의 절반이 넘게 숲에 덮여 있으며, 얼어붙은 동토가 대부분이기 때문에 전체 인구의 5분의 4가 유럽과 인접해있는 서부 지방에 몰려 있을 정도로 몰려 살아가고 있다. 인구는 세계에서 9위로 많으며, 세계에서 가장 인구 밀집도가 낮은 국가들 중 하나이다. 러시아는 총 85개의 연방관구로 구성되어 있으며, 러시아의 수도인 모스크바 메트로폴리탄은 2천만 명이 넘는 사람들이 살고 있으며 유럽에서 가장 거대한 도시이며 세계적으로도 가장 거대한 규모들 중 하나이다.</p></div>
+                <div>
+                    <h1>관광명소</h1>
+                    <div class="divlayout"><img class="mapinimg" src="img/100n0h0000008op8a469A_C_760_506.jpg" alt=""><p>예르미타시 미술관</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/100i1f000001gp3mn9F67_C_760_506.jpg" alt=""><p>성 바실리 대성당</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/licensed-image.jfif" alt=""><p>옐부르스 산</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/images.jfif" alt=""><p>페테르고프궁</p></div>
+                </div>
+              
+            </div>
+            <div id="jepvideo">
+                <iframe id="video2" width="460" height="200" src="https://www.youtube.com/embed/gqYzEv_AqYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="transition:0.5s;pointer-events: none;"></iframe>
+                <div><p>일본국은 동아시아에 있는 국가이다. 태평양에 있는 일본 열도의 네 개의 큰 섬(혼슈, 규슈, 시코쿠, 홋카이도)과 이들 주변에 산재한 작은 섬들로 구성되어 있다. 일본의 전체 면적은 37만 7973 km²이며, 독일(35만 7386km²)보다 조금 크다.[5] 6,852개의 섬으로 이루어진 군도 국가[6]인 일본은 혼슈, 규슈, 시코쿠, 홋카이도 등 4개의 섬이 일본 전체 면적의 97%를 차지하며, 대부분의 섬들이 화산 활동을 통해 생겨났다. 일본의 인구는 약 1억 2,600만 명으로, 세계에서 11번째로 많다.</p></div>
+                <div>
+                    <h1>관광명소</h1>
+                    <div class="divlayout"><img class="mapinimg" src="img/59c1f2616671e.jpg" alt=""><p>기요미즈데라</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/26ab2e7d6db9824f360dd0e90579fad1d2d42559426b5c171e5f95df5da177b1821f84126714423a3f5c556705b39274bf0bd1083f6d2b2482c1ad805b7e84f946f2e5b35e61c1025bee29bfe2e1ab470dd04fd6a55f9c7466cbf91650b750bd68ac6395650314663e.jfif" alt=""><p>히메지 성</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/a0004021_parts_5e16895b25c0a.jpg" alt=""><p>이쓰쿠시마 신사</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/pixta_43064884_S.jpg" alt=""><p>후지 산</p></div>
+                </div>
+            </div>
+            <div id="chavideo">
+                <iframe  id="video3" width="460" height="200" src="https://www.youtube.com/embed/p1e68fqMkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="transition:0.5s;pointer-events: none;"></iframe>
+                <div><p>수도는 베이징이며, 최대 도시는 상하이이다. 이밖에 중화인민공화국의 주요 도시로는 광저우, 난징, 시안, 푸저우, 칭다오, 충칭 등이 있다.  근대 중국에서는 1911년 신해혁명으로 청나라가 무너지고 국민당 정부가 들어섰으나, 정치적 혼란이 이어지면서 각지에서 군벌정부가 권력을 휘두르는 군벌 시대로 돌입하게 되었다. 한편 5·4 운동의 반제국주의 강령을 중심으로 창당된 중국 공산당은 1920년 이후 소련의 지원을 받으며 세력을 급격히 키웠고, 국민정부과 계속해서 내전을 벌였다.</p></div>
+                <div>
+                    <h1>관광명소</h1>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (1).jfif" alt=""><p>만리장성</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (2).jfif" alt=""><p>자금성</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (3).jfif" alt=""><p>병마용</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (4).jfif" alt=""><p>러산대불</p></div>
+                </div>
+            </div>
+           
+            <div id="usvideo">
+                <iframe  id="video4" width="460" height="200" src="https://www.youtube.com/embed/0dVzUvPQOto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="transition:0.5s;pointer-events: none;"></iframe>
+                <div><p>세계 여러 나라 중에 미국은 총면적 기준으로 세 번째로 넓은 국가이고, 세 번째로 인구가 많은 국가이다. 세계에서 손꼽히는 다문화 국가 중 하나로, 주로 백인, 흑인, 아시아인 등 여러 인종들이 섞여 있다. 또한 세계 각국에서 수많은 이민자가 들어온다.[1] 미국의 경제는 2019년 기준 명목상 국내 총생산이 21조 4394억 달러로, 전세계에서 최대 규모의 경제를 보유하고 있다.[2][3]아시아 대륙에서 기원한 것으로 보이는 아메리카 원주민은 오늘날 미국 본토에 오랜 세월 동안 살아왔으나 유럽의 아메리카 식민지화 이후 전쟁과 질병으로 원주민들의 수는 급감하였다</p></div>
+                <div>
+                    <h1>관광명소</h1>
+                    <div class="divlayout"><img class="mapinimg" src="img/us(1).jpg" alt=""><p>골든게이트 교</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/us(2).jpg" alt=""><p>자유의 여신상</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/US46d0f71408eac0.jfif" alt=""><p>타임즈 스퀘어</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/walt-disney-world.jpg" alt=""><p>월트 디즈니</p></div>
+                </div>
+            </div>
+            <div id="ausvideo">
+                <iframe  id="video5" width="460" height="200" src="https://www.youtube.com/embed/ZUw5rpaS-wk?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="transition:0.5s;pointer-events: none;"></iframe>
+                <div><p>오스트레일리아 연방은 오스트레일리아 대륙 본토와 태즈메이니아 섬, 그리고 인도양과 태평양의 많은 섬으로 이루어진 주권국이며 오세아니아에서 1번째, 세계에서 6번째로 면적이 넓은 나라다. 북쪽에는 인도네시아와 동티모르, 파푸아뉴기니, 북동쪽에는 솔로몬 제도와 바누아투, 누벨칼레도니, 그리고 남동쪽에는 뉴질랜드가 있다. 수도는 캔버라이고, 주요 도시로는 시드니, 멜버른, 브리즈번, 퍼스, 골드코스트, 애들레이드 등이 있다.18세기 말 유럽인들 이주 이전 최소 40,000년 전부터 원주민이 살았다고 여긴다.</p></div>
+                <div>
+                    <h1>관광명소</h1>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (5).jfif" alt=""><p>그레이트배리어프</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (6).jfif" alt=""><p>시드니 오페라 하우스</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/images (7).jfif" alt=""><p>울루루</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/licensed-image (1).jfif" alt=""><p>카타 튜타/ 마운트 올가</p></div>
+                </div>
+            </div>
+            <div id="euvideo">
+                <iframe  id="video6"width="460" height="200" src="https://www.youtube.com/embed/YM_4shi_fsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="transition:0.5s;pointer-events: none;"></iframe>
+                <div><p>유럽은 대륙 중 하나로, 우랄산맥과 캅카스산맥, 우랄강, 카스피해, 흑해와 에게해의 물길을 분수령으로 하여 아시아와 구분한 지역을 일컫는다. 북쪽으로는 북극해, 서쪽으로는 대서양, 남쪽으로는 지중해, 동남쪽으로는 흑해와 그와 비롯한 물길과 마주한다. 그러나 이러한 경계는 과거의 고전 고대 시대의 개념으로서 이해하기에는 모호하므로, 자연지리학으로서의 유럽은 문화와 정치적 요소를 포함하여 정의한다.유럽은 10,180,000 km² 또는 지구 표면의 2%, 육지의 약6.8% 지역으로 표현된다. 유럽은 약 50개국으로 이루어져 있다.</p></div>
+                <div>
+                    <h1>관광명소</h1>
+                    <div class="divlayout"><img class="mapinimg" src="img/eu.jfif" alt=""><p>에펠탑</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/eu2.jfif" alt=""><p>콜로세움</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/eu3.jfif" alt=""><p>프라하 성</p></div>
+                    <div class="divlayout"><img class="mapinimg" src="img/eu4.jpg" alt=""><p>알프스 산맥</p></div>
+                </div>
+            </div>
+        </div>
+
+           <div class="eventboxlayout">
+
+               <div class="main">
+                   <button class="mainbut mainbutmargin">트래블버블 전용 패키지</button>
+                   <button class="mainbut">트래버블 반달 살기</button>
+                   <button class="mainbut">트레블버블 전용</button>
+               </div>
+
+               <div class="side" style="z-index: 1;">
+
+
+
+
+<div><img src="img/T1.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+               </div>
+
+               <div class="side">
+                   
+
+<div><img src="img/T2.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+
+               <div class="side">
+                   
+
+<div><img src="img/T3.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+
+               <div class="side1"style="z-index: 1;">
+                <div><img src="img/T1.jpg" alt="#"></div>
+                <div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+               </div>
+
+               <div class="side1">
+                   
+
+<div><img src="img/T2.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+
+               <div class="side1">
+                   
+
+<div><img src="img/T3.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+
+               <div class="side2" style="z-index: 1;">
+                <div><img src="img/T1.jpg" alt="#"></div>
+                <div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+               <div class="side2">
+                   
+
+<div><img src="img/T2.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+               <div class="side2">
+                   
+
+<div><img src="img/T3.jpg" alt="#"></div>
+<div><p>#올인클루시브 #250불 크레딧 제공[한정특가] 사이판 여행 8일 - 켄싱턴&월드 리조트 PCR음성확인서만 있다면 누구나!539,000원~</p></div>
+
+               </div>
+
+           </div>
+        
+        <ul class="mainmenu">
+            <li class="line bottom"></li>
+            <li class="line bottom"></li>
+            <li class="line bottom"></li>
+        </ul>
+        <div id="mainmenubox"></div>
+
+
+
+        <div id="cardlayout">
+            <div class="cardlayout">
+                <div class="hovercard"> 
+                    <div class="card">
+                       <div class="cardbox front front1"></div>
+                       <div class="cardbox back back1"></div>
+                    </div>
+                </div>
+                <div class="hovercard"> 
+                    <div class="card">
+                       <div class="cardbox front front2"></div>
+                       <div class="cardbox back back2"></div>
+                    </div>
+                </div>
+                <div class="hovercard"> 
+                    <div class="card">
+                       <div class="cardbox front front3"></div>
+                       <div class="cardbox back back3"></div>
+                    </div>
+                </div>
+            
+        </div>
+
+</div>
+   
+</div>
+    
+</body>
+
+<script>
+    // 배경이미지 조절
+    let count = 6
+     let target = document.querySelector("#layout")
+     let target2 = document.querySelector("#contant")
+     let target3 = document.querySelector("#container")
+     let span = document.querySelectorAll(".fontspan")
+     let painting = document.querySelector(" #painting")
+     
+    document.querySelector("html").addEventListener("mousewheel",(delta)=>{
+        if (delta.wheelDelta > 0 && count == 6)
+        {
+         target.style.marginTop= "700px"
+         target.style.opacity="0%"
+         target3.style.opacity="0%"
+        }else if (delta.wheelDelta > 0 && count == 5)
+        {
+            for(var i=0;i<span.length;i++)
+        {
+          span[i].style.filter= "blur(0px)";
+          span[i].style.opacity= "100%";
+        }
+        
+        setTimeout(()=>{
+            painting.style.opacity="100%"
+        },1000)
+        
+       
+         target.style.marginTop= "500px"
+         target.style.opacity="100%"
+         target3.style.opacity="100%"
+         count++
+        }
+        else if (delta.wheelDelta > 0 && count == 4)
+        {  
+         target.style.marginTop= "300px"
+         target.style.opacity="100%"
+        target3.style.opacity="100%"
+         count++
+        }
+        else if (delta.wheelDelta > 0 && count == 3)
+        {
+         target.style.marginTop= "100px"
+         target.style.opacity="100%"
+         target3.style.opacity="100%"
+         count++
+        }
+        else if (delta.wheelDelta > 0 && count < 3)
+        {
+       
+         count++
+        }
+        
+        else if (delta.wheelDelta < 0 && count == 6)
+        {
+        for(var i=0;i<span.length;i++ )
+        {
+          span[i].style.filter= "blur(30px)";
+          span[i].style.opacity= "0%";
+        }
+        setTimeout(()=>{
+            painting.style.opacity="0%"
+        },300)
+       
+         target.style.marginTop= "500px"
+         target.style.opacity="100%"
+         target3.style.opacity="100%"
+         count--
+        }
+        else if (delta.wheelDelta < 0 && count == 5)
+        {
+         target.style.marginTop= "300px"
+         target.style.opacity="100%"
+         target3.style.opacity="100%"
+         count--
+        }
+        else if (delta.wheelDelta < 0 && count == 4)
+        {
+            
+         
+         target.style.marginTop= "-100px"
+         target.style.opacity="100%"
+         target3.style.opacity="100%"
+        
+         count--
+        }
+        else if (delta.wheelDelta < 0 && count < 4 && count > -16)
+        {
+        
+         count--
+        }
+    })
+    // 패키지 항공 호텔 클릭시 바뀌는부분
+    var targetTitle = document.querySelectorAll(".title");
+    var targetMeun1 = document.querySelector("#menu1");
+    var targetMeun2 = document.querySelector("#menu2");
+    var targetMeun3 = document.querySelector("#menu3");
+
+    targetTitle[0].addEventListener("click",function(){
+        targetMeun1.style.zIndex = 3;
+        targetMeun2.style.zIndex = 1;
+        targetMeun3.style.zIndex = 2;
+
+        targetTitle[0].style.borderBottom ="3px solid #000";
+        targetTitle[1].style.borderBottom ="1px solid #000";
+        targetTitle[2].style.borderBottom ="1px solid #000";
+
+        targetTitle[0].style.fontWeight= "bolder";
+        targetTitle[1].style.fontWeight= "normal";
+        targetTitle[2].style.fontWeight= "normal";
+        
+    });
+    targetTitle[1].addEventListener("click",function ()
+    {
+        targetMeun1.style.zIndex = 2;
+        targetMeun2.style.zIndex = 3;
+        targetMeun3.style.zIndex = 1;
+
+        targetTitle[0].style.borderBottom ="1px solid #000";
+        targetTitle[1].style.borderBottom ="3px solid #000";
+        targetTitle[2].style.borderBottom ="1px solid #000";
+
+        targetTitle[0].style.fontWeight= "normal";
+        targetTitle[1].style.fontWeight= "bolder";
+        targetTitle[2].style.fontWeight= "normal";
+    });
+    targetTitle[2].addEventListener("click",function (){
+        targetMeun1.style.zIndex = 1;
+        targetMeun2.style.zIndex = 2;
+        targetMeun3.style.zIndex = 3;
+
+        targetTitle[0].style.borderBottom ="1px solid #000"
+        targetTitle[1].style.borderBottom ="1px solid #000"
+        targetTitle[2].style.borderBottom ="3px solid #000"
+
+        targetTitle[0].style.fontWeight= "normal";
+        targetTitle[1].style.fontWeight= "normal";
+        targetTitle[2].style.fontWeight= "bolder";
+        
+    });
+    // 나라 선택창
+    const targetSelcetcity1 = document.querySelector("#seleccontry")
+    var playBlockNoneVar = playBlockNone()
+  
+
+    function playBlockNone() {
+       
+        return function () 
+        {
+        document.querySelector("#selectcitybox").style.display = cilckPoint?"block":"none"; 
+        cilckPoint = !cilckPoint
+        }
+    }
+    targetSelcetcity1.addEventListener("click",playBlockNoneVar)
+
+    var selcetContryClass = document.querySelectorAll(".selcetcontryclass");
+    var selcetCity = document.querySelectorAll(".selcetcity");
+    var indexCount = 11;
+
+    clickIndexChange()
+
+    function clickIndexChange()
+    {
+     for(let i=0;i<selcetContryClass.length;i++)
+     {  
+        selcetContryClass[i].addEventListener("click",()=>{
+            selcetCity[i].style.zIndex = indexCount
+            indexCount++
+        })
+     }   
+    }
+
+
+
+
+    // 세계지도 
+   
+    var jsContry =[document.querySelector("#rus"),document.querySelector("#jep"),document.querySelector("#cha"),document.querySelector("#us"),document.querySelector("#aus"),document.querySelector("#eu")]
+
+    function eventMouse(x) {
+    x.addEventListener("mouseover",function()
+    {
+        x.style.transform ="scale(1.2)";
+        x.style.zIndex = 3;
+    });
+    
+    x.addEventListener("mouseout",function()
+    {
+        x.style.transform ="scale(1)";
+        x.style.zIndex = 0;
+    });
+        
+    }
+    eventMouse(jsContry[0])
+    eventMouse(jsContry[1])
+    eventMouse(jsContry[2])
+    eventMouse(jsContry[3])
+    eventMouse(jsContry[4])
+    eventMouse(jsContry[5])
+ 
+    // 세계지도 클릭하면 나오는 박스
+    // 호주
+      let worldCountry=[document.querySelector("#rusvideo"),
+                        document.querySelector("#jepvideo"),
+                        document.querySelector("#chavideo"),
+                        document.querySelector("#usvideo"),
+                        document.querySelector("#ausvideo"), 
+                        document.querySelector("#euvideo")]
+    var mapBlockNoneVar1 = mapBlockNone1()
+    var mapBlockNoneVar2 = mapBlockNone2()
+    var mapBlockNoneVar3 = mapBlockNone3()
+    var mapBlockNoneVar4 = mapBlockNone4()
+    var mapBlockNoneVar5 = mapBlockNone5()
+    var mapBlockNoneVar6 = mapBlockNone6() 
+    let cilckPoint = true
+
+
+  function mapBlockNone1() {
+    let worldRemove = worldCountry.slice()
+        worldRemove.shift()
+        return function () 
+        {
+        document.querySelector("#rusvideo").style.opacity = cilckPoint?"100%":"0%"; 
+        for(var i = 0;i < worldRemove.length;i++)
+        {
+         worldRemove[i].style.opacity="0%";
+        }
+        document.querySelector("#rusvideo").style.width= "460px"
+        document.querySelector("#rusvideo").style.height = "600px"
+        document.querySelector("#video1").width="460px"
+        document.querySelector("#video1").height="200px"
+        document.querySelector("#video1").src = cilckPoint?"https://www.youtube.com/embed/5dJ9hb__GQg?autoplay=1&mute=1&autohide=1":"https://www.youtube.com/embed/5dJ9hb__GQg"
+        cilckPoint = !cilckPoint
+        }
+    }
+    jsContry[0].addEventListener("click",mapBlockNoneVar1)
+
+
+
+
+    function mapBlockNone2() {
+        let worldRemove1 = worldCountry.slice()
+            worldRemove1.splice(1,1)  
+        return function () 
+        {
+        document.querySelector("#jepvideo").style.opacity = cilckPoint?"100%":"0%";
+        for(var i = 0;i < worldRemove1.length;i++)
+        {
+         worldRemove1[i].style.opacity="0%";
+        }
+         
+        document.querySelector("#jepvideo").style.width= "460px"
+        document.querySelector("#jepvideo").style.height = "600px"
+        document.querySelector("#video2").width="460px"
+        document.querySelector("#video2").height="200px"
+        document.querySelector("#video2").src = cilckPoint?"https://www.youtube.com/embed/gqYzEv_AqYM?autoplay=1&mute=1&autohide=1":"https://www.youtube.com/embed/gqYzEv_AqYM"
+        cilckPoint = !cilckPoint
+        }
+    }
+    jsContry[1].addEventListener("click",mapBlockNoneVar2)
+
+
+    function mapBlockNone3() {
+        let worldRemove2 = worldCountry.slice()
+            worldRemove2.splice(2,1)
+        
+        return function () 
+        {
+        document.querySelector("#chavideo").style.opacity = cilckPoint?"100%":"0%"; 
+        for(var i = 0;i < worldRemove2.length;i++)
+        {
+        worldRemove2[i].style.opacity="0%";
+        }
+        document.querySelector("#chavideo").style.width= "460px"
+        document.querySelector("#chavideo").style.height = "600px"
+        document.querySelector("#video3").width="460px"
+        document.querySelector("#video3").height="200px"
+        document.querySelector("#video3").src = cilckPoint?"https://www.youtube.com/embed/p1e68fqMkME?autoplay=1&mute=1&autohide=1":"https://www.youtube.com/embed/p1e68fqMkME"
+        cilckPoint = !cilckPoint
+        }
+    }
+    jsContry[2].addEventListener("click",mapBlockNoneVar3)
+
+
+
+
+    function mapBlockNone4() {
+        let worldRemove3 = worldCountry.slice()
+            worldRemove3.splice(3,1)
+           
+        return function () 
+        {
+        document.querySelector("#usvideo").style.opacity = cilckPoint?"100%":"0%"; 
+        for(var i = 0;i < worldRemove3.length;i++)
+        {
+        worldRemove3[i].style.opacity="0%";
+        }
+        document.querySelector("#usvideo").style.width= "460px"
+        document.querySelector("#usvideo").style.height = "600px"
+        document.querySelector("#video4").width="460px"
+        document.querySelector("#video4").height="200px"
+        document.querySelector("#video4").src = cilckPoint?"https://www.youtube.com/embed/0dVzUvPQOto?autoplay=1&mute=1&autohide=1":"https://www.youtube.com/embed/0dVzUvPQOto"
+        cilckPoint = !cilckPoint
+        }
+    }
+    jsContry[3].addEventListener("click",mapBlockNoneVar4)
+    function mapBlockNone5() {
+        let worldRemove4 = worldCountry.slice()
+            worldRemove4.splice(4,1)
+            
+        return function () 
+        {
+        document.querySelector("#ausvideo").style.opacity = cilckPoint?"100%":"0%"; 
+        for(var i = 0;i < worldRemove4.length;i++)
+        {
+        worldRemove4[i].style.opacity="0%";
+        }
+        document.querySelector("#ausvideo").style.width= "460px"
+        document.querySelector("#ausvideo").style.height = "600px"
+        document.querySelector("#video5").width="460px"
+        document.querySelector("#video5").height="200px"
+        document.querySelector("#video5").src = cilckPoint?"https://www.youtube.com/embed/ZUw5rpaS-wk?autoplay=1&mute=1&autohide=1":"https://www.youtube.com/embed/ZUw5rpaS-wk?"
+        cilckPoint = !cilckPoint
+        }
+    }
+    jsContry[4].addEventListener("click",mapBlockNoneVar5)
+  
+    function mapBlockNone6() {
+        let worldRemove5 = worldCountry.slice()
+            worldRemove5.splice(5,1)
+            
+        return function () 
+        {
+        document.querySelector("#euvideo").style.opacity = cilckPoint?"100%":"0%"; 
+        for(var i = 0;i < worldRemove5.length;i++)
+        {
+        worldRemove5[i].style.opacity="0%";
+        }
+        document.querySelector("#euvideo").style.width= "460px"
+        document.querySelector("#euvideo").style.height = "600px"
+        document.querySelector("#video6").width="460px"
+        document.querySelector("#video6").height="200px"
+        document.querySelector("#video6").src = cilckPoint?"https://www.youtube.com/embed/YM_4shi_fsk?autoplay=1&mute=1&autohide=1":"https://www.youtube.com/embed/YM_4shi_fsk?"
+        cilckPoint = !cilckPoint
+        }
+    }
+    jsContry[5].addEventListener("click",mapBlockNoneVar6)
+    // 이미지 슬라이더
+    let targetContainer = document.querySelector("#container")
+    let targetInfo = document.querySelector("#info")
+    let targetMenu = document.querySelectorAll(".menu")
+    let slide = document.querySelector(".slide")
+    let arrowRight = document.querySelector(".right")
+    let arrowLeft = document.querySelector(".left")
+    let moveCount = 0;
+    
+    
+  var autoSlide = setInterval(() => {
+    moveSlide(moveCount - 1)
+  }, 2000);
+
+
+    arrowRight.addEventListener("click",()=> {
+        moveSlide(moveCount - 1)
+    })
+
+    arrowLeft.addEventListener("click",()=>{
+        moveSlide(moveCount + 1)
+    })
+
+
+function moveSlide(num){   
+
+    slide.classList.add("tranform0")
+if (num > -4) {
+    slide.style.left=num*(700)+'px'
+    moveCount = num
+}
+
+setTimeout(()=> {
+    if (moveCount == -3)
+    {   slide.classList.remove("tranform0")
+        slide.style.left="0px"
+        moveCount = 0;
+    }else if (moveCount == 1) {
+        slide.classList.remove("tranform0")
+        slide.style.left="-1400px"
+        moveCount = -2;
+    }
+},500)
+
+
+
+if (num == -1 )
+    {targetContainer.style.backgroundColor= "#84EAC0";targetInfo.style.backgroundColor= "#84EAC0";
+    for(let i = 0;i <targetMenu.length;i++)
+    {targetMenu[i].style.backgroundColor= "#84EAC0"}
+    }
+    else if (num ==-2  || num == 1  ) 
+    {targetContainer.style.backgroundColor= "#FFE7E2";targetInfo.style.backgroundColor= "#FFE7E2";
+    for(let i = 0;i <targetMenu.length;i++)
+    {targetMenu[i].style.backgroundColor= "#FFE7E2"}
+    }
+    else if ( num==-3 || num == 0 ) 
+    {targetContainer.style.backgroundColor= "#b3d5fd";targetInfo.style.backgroundColor= "#b3d5fd";
+    for(let i = 0;i <targetMenu.length;i++)
+    {targetMenu[i].style.backgroundColor= "#b3d5fd"}
+    } 
+
+ 
+    
+}
+// 마우스 올리면 슬라이더 자동 움직임 중지
+
+document.querySelector(".imgsliderlayout").addEventListener("mouseover",()=>{
+    clearInterval(autoSlide)
+})
+document.querySelector(".imgsliderlayout").addEventListener("mouseout",()=>{
+    autoSlide = setInterval(() => {
+    moveSlide(moveCount - 1)
+  }, 2000);
+})
+// 이벤트 
+const targetMainBut = document.querySelectorAll(".mainbut")
+const targetslidBut = document.querySelectorAll(".side")
+const targetslidBut1 = document.querySelectorAll(".side1")
+const targetslidBut2 = document.querySelectorAll(".side2")
+let slidButcount= 1;  
+    targetslidBut[0].style.backgroundColor ="blue";
+    targetslidBut1[0].style.backgroundColor ="blue";
+    targetslidBut2[0].style.backgroundColor ="blue";
+    targetslidBut[1].style.backgroundColor ="red";
+    targetslidBut1[1].style.backgroundColor ="red";
+    targetslidBut2[1].style.backgroundColor ="red";
+    targetslidBut[2].style.backgroundColor ="black";
+    targetslidBut1[2].style.backgroundColor ="black";
+    targetslidBut2[2].style.backgroundColor ="black";
+
+
+
+targetMainBut[0].addEventListener("click",()=>{
+    targetslidBut[0].style.zIndex =  slidButcount
+    targetslidBut1[0].style.zIndex =  slidButcount
+    targetslidBut2[0].style.zIndex =  slidButcount
+    slidButcount++
+})
+targetMainBut[1].addEventListener("click",()=>{
+    targetslidBut[1].style.zIndex =  slidButcount
+    targetslidBut1[1].style.zIndex =  slidButcount
+    targetslidBut2[1].style.zIndex =  slidButcount
+    slidButcount++
+})
+targetMainBut[2].addEventListener("click",()=>{
+    targetslidBut[2].style.zIndex =  slidButcount
+    targetslidBut1[2].style.zIndex =  slidButcount
+    targetslidBut2[2].style.zIndex =  slidButcount
+    slidButcount++
+})
+
+// 네비게이션바
+let mainmenuboxcount = true
+const targetLinebottom = document.querySelectorAll(".line")
+
+document.querySelector(".mainmenu").addEventListener("click",
+()=>{
+    document.querySelector("#mainmenubox").style.right = mainmenuboxcount?"0px":"-350px"
+    targetLinebottom[0].style.transform= mainmenuboxcount?"rotate(-50deg)":"rotate(0deg)";
+    targetLinebottom[0].style.marginTop= mainmenuboxcount?"35px":"15px";
+    targetLinebottom[1].style.opacity= mainmenuboxcount?"0%":"100%";
+    targetLinebottom[2].style.transform= mainmenuboxcount?"rotate(50deg)":"rotate(0deg)";
+    targetLinebottom[2].style.marginTop= mainmenuboxcount?"-25px":"15px";
+    mainmenuboxcount = !mainmenuboxcount
+})
+// 클릭시 포커싱 
+
+
+ targetSelcetcity1.addEventListener("click",()=>{
+    targetSelcetcity1.style.transition="0.5s" ;
+    targetSelcetcity1.scrollIntoView(true)
+    count = -5
+ })
+//  뒤집기
+let targetCard = document.querySelectorAll(".card")
+let targetHovercard = document.querySelectorAll(".hovercard")
+let targetBack = document.querySelectorAll(".back")
+let targetfront= document.querySelectorAll(".front")
+
+function cardMove()
+{    
+     for (let i = 0; i < targetCard.length; i++) {
+        targetHovercard[i].addEventListener("mouseover",()=>{
+        targetHovercard[i].style.boxShadow = "1px 1px 100px white";
+        targetHovercard[i].style.border="2px solid #fff";
+        
+        targetCard[i].style.transform="rotateX(180deg)"
+        targetBack[i].style.transform="rotateX(180deg)"
+        targetfront[i].style.transform="rotateX(180deg)"
+    }) 
+    
+}
+   
+}
+cardMove()
+function cardMove2()
+{    
+     for (let i = 0; i < targetCard.length; i++) {
+        targetHovercard[i].addEventListener("mouseout",()=>{
+            targetHovercard[i].style.boxShadow = "";
+        targetHovercard[i].style.border="";
+        targetCard[i].style.transform="rotateX(0deg)"
+        targetBack[i].style.transform="rotateX(0deg)"
+        targetfront[i].style.transform="rotateX(0deg)"
+    }) 
+    
+}
+   
+}
+cardMove2()
+</script>
+</html>
