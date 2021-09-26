@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본설정 */
+        html,body{height: 100vh; ; overflow: hidden;}
+        *{margin: 0%;padding: 0%;}
+        a{text-decoration: none;color: black;}
+        ul{list-style: none;}
+        /* 폰트 설정 */
+      
+        /* 레이아웃 */
+        #container{width: 100vw;background-color: black; margin: 0% auto; transition: 1s;}
+        #nav{width: 100vw;height: 10vh;background-color:#ffffff; position: fixed; display: none; transition: 1s; z-index: 999999;}
+        #mainimg{width: 100vw;height: 100vh;background-color: rgb(255, 255, 255);}
+        #content{width: 100vw;height: 35vh;background-color: rgb(122, 122, 122);overflow: hidden;} 
+        #bestseller{width: 100vw;height: 90vh;;background-color: rgb(161, 161, 161);  display: flex; justify-content: center; align-items: center; flex-direction: column;}
+        #fixedslide{display: flex; width: 100vw;height: 90vh;;background-color: rgb(204, 204, 204); background: url(/포트폴리오2/img/backgroundimg2.png) no-repeat;background-size: 100vw 100vh; justify-content: center;flex-direction: column; align-items: center;}
+        #recipe{width: 100vw;height: 90vh;;background-color: rgb(243, 182, 182); display: flex;justify-content:space-evenly;align-items:center;}
+        #sns{width: 100vw;height: 90vh;;background-color: rgb(116, 255, 190);}
+        #footer{width: 100vw;height: 90vh;;background-color: rgb(110, 127, 224);}
+        /* nav */
+        #nav>img{width: 8vw;height: 10vh;}
+
+        /* mainimg */
+        #mainimg>img{width:100vw;height: 100vh; margin: 0% auto; display: block; }
+
+        /* content */
+        .contentlayout{display: flex; justify-content: center; text-align: center; }
+        .contenttextbox{transition: 1.5s;}
+        .contenttextbox>p:first-child{ margin: 20px 0px 0px 0px; font-size: 30px;}
+        .contentimg{width: 8vmax;height: 8vmax; border: 1px solid #000; border-radius: 50%;margin: 60px 80px 20px 80px; transition: 1.5s;}
+      
+       /* bestseller */
+       .bestesllertext{font-size: 4vmax; display: flex; justify-content: center; align-items: center;}
+       .bestesllertext>p{margin-top: 100px;}
+       .rankinglayout{display: flex; justify-content: center; align-items: center;}
+       .ranking{margin: 100px 50px 0px 50px;}
+       .ranking1{width: 15vmax; height: 18vmax; border: 1px solid #000;}
+       .ranking2{width: 15vmax; height: 22vmax; border: 1px solid #000;}
+       .ranking3{width: 15vmax; height: 18vmax; border: 1px solid #000;}
+
+
+       /* fixedslide */
+       #fixedslide>img{ transition: 1.5s;}
+       #fimg{width: 45vmax;height: 40vmax;}
+       #fimg2{width: 30vmax;height: 30vmax;}
+       #fixedslide>div>div>p:first-child{font-size: 3vmax;font-weight: bolder;}
+       #fixedslide>div>div>p:not(first-child){font-size: 3vmax;font-weight: bolder; }
+       /* recipe */
+       .book{width: 20vmax;height: 25vmax; border: 1px solid #000;}
+       .slider{width: 50%; height: 25vmax;border: 1px solid #000; display: flex; flex-direction:row;}
+       .slider>div{width:100%;  height: 80%;border: 1px solid #000; margin:0px 10px;}
+
+     
+  </style>
+</head>
+<body>
+    <div id="nav">
+    <img src="/포트폴리오2/img/logo1.png" alt="">
+    </div>
+    <div id="container">
+      
+        <div id="mainimg">
+        <img src="/포트폴리오2/img/backgroundimg.png" alt="">
+        </div>
+
+        <div id="content">
+            <div class="contentlayout" >
+                <div class="contenttextbox">
+                    <p>-정성과 전통으로 고객을 모십니다-</p>
+                    <p>김부각은 늘 최고의 맛과 고객 감동을 꿈굽니다</p> 
+                </div>
+            </div>
+         
+        <div class="contentlayout">
+            <div><div class="contentimg"></div>
+            <p>Since 1945</p>
+            <p>끊임없이 연구하고 
+             발전하여  <br>고객에게 좋은 제품을 만듭니다
+            </p>
+            </div>
+
+            <div><div class="contentimg"></div>
+                 <p>World</p>
+                 <p>늘 열린마음으로 세상을보고<br>
+                 우리의 것을 세계에 알리는 기업 </p>
+            </div>
+            <div>
+                <div class="contentimg"></div>
+                <p>Good hygiene</p>
+                <p>엄격한 위생관념으로 <br>
+                누구보다 음식에 자신있는 기업</p>
+            </div>
+            
+                 
+        </div>
+    
+            
+        </div>
+
+        <div id="bestseller">
+ <div class="bestesllertext"><p>Best Seller</p></div>
+ <div class="rankinglayout">
+    <div class="ranking ranking1"></div>
+    <div class="ranking ranking2"></div>
+    <div class="ranking ranking3"></div>
+ </div>
+        </div>
+
+<div id="fixedslide">
+            <div>
+                <div class="goodsname0">
+                    <p>우수상품</p>
+                    <p>기 획 전</p>
+                </div>
+                <div class="goodsname1">
+                    <p>우리전통</p>
+                    <p>김 부 각</p>
+                </div>
+                
+            </div>
+    
+                <img id="fimg" src="/포트폴리오2/img/goodsimg.png" alt="">
+                <img id="fimg2"src="/포트폴리오2/img/goodsimg2.png" alt="">
+
+</div>
+
+        <div id="recipe">
+     <div class="book"></div>
+     <div class="slider">
+     <div> </div>
+     <div> </div>
+     <div> </div>
+     <div> </div>
+     <div> </div>
+     </div>
+        </div>
+
+        <div id="sns">
+
+        </div>
+
+        <div id="footer">
+
+        </div>
+
+
+    </div>
+</body>
+<script>
+    let count = 0
+    let targetNav = document.querySelector("#nav")
+    let targetContainer = document.getElementById("container")
+    let targerContentTextBox = document.querySelector(".contenttextbox")
+    let targerContentImg = document.querySelectorAll(".contentimg")
+    let targerFixedslide_img = document.querySelectorAll("#fixedslide>img")
+    let goodsname0 = document.querySelectorAll(".goodsname0>p")
+    let goodsname1 = document.querySelectorAll(".goodsname1>p")
+   
+
+
+    // js로 css 추가 설정들
+     targerContentTextBox.style.margin = "500px 0px 0px 0px"
+     targerContentImg[0].style.margin = "100px  0px 0px 0px"
+     targerContentImg[1].style.margin = "100px  300px 0px 300px"
+     targerContentImg[2].style.margin = "100px  0px 0px 0px"
+   
+     
+     targerFixedslide_img[0].style.transform= "translateX(0vw)translateY(10vmax)";
+     targerFixedslide_img[0].style.left= "100vmax";
+     targerFixedslide_img[0].style.top= "40vmax";
+     
+     targerFixedslide_img[1].style.left= "100vmax";
+     targerFixedslide_img[1].style.top= "40vmax";
+     targerFixedslide_img[1].style.transform= "translateX(-100vw)translateY(-15vmax)";
+
+     goodsname0[0].style.transform = "translateY(13vmax)";
+     goodsname0[1].style.transform = "translateY(13vmax)";
+     goodsname1[0].style.transform = "translateX(100vw)translateY(5vmax)";
+     goodsname1[1].style.transform = "translateX(-100vw)translateY(5vmax)";
+
+    document.addEventListener("mousewheel",(e)=>{
+   if (e.wheelDelta < 0  && count <12 ) {
+       count++
+   }else if (e.wheelDelta > 0  && count >0) {
+       count--
+   }
+   scrollMoveEvent(e.wheelDelta)
+   
+    })
+
+
+
+    function scrollMoveEvent(i){
+   if (count ==0) {
+    targetContainer.style.marginTop = "0px";
+    targetNav.style.display= "none";
+    // 우수상품전 이미지 바뀌는 부분
+    targerContentTextBox.style.margin = "500px 0px 0px 0px"
+    targerContentImg[0].style.margin = "100px  0px 0px 0px"
+    targerContentImg[1].style.margin = "100px  300px 0px 300px"
+    targerContentImg[2].style.margin = "100px  0px 0px 0px"
+    // 텍스트 바뀌는 부분
+   }else if (i < 0  && count == 2) {
+    targetContainer.style.marginTop = "-35vh";
+    targetNav.style.display= "block";
+    targerContentTextBox.style.margin = ""
+    targerContentImg[0].style.margin = ""
+    targerContentImg[1].style.margin = ""
+    targerContentImg[2].style.margin = ""
+
+   }else if (i < 0  && count == 4) {
+    targetContainer.style.marginTop = "-125vh";
+    setTimeout(() => {
+    targerContentTextBox.style.margin = ""
+    targerContentImg[0].style.margin = "30px  200px 0px 200px"
+    targerContentImg[1].style.margin = ""
+    targerContentImg[2].style.margin = "30px  200px 0px 200px"
+    }, 700);
+
+   }else if (i < 0  && count == 6) {
+   targetContainer.style.marginTop = "-215vh";
+  
+  
+
+  
+    }else if (i < 0  &&count == 8) {
+    targerFixedslide_img[0].style.transform= "translateX(100vw)translateY(10vmax)";
+    targerFixedslide_img[1].style.transform= "translateX(0vw)translateY(-15vmax)";
+     //   텍스트 바뀌는 부분
+   goodsname0[0].style.transform = "translateX(100vw)translateY(13vmax)";
+   goodsname0[1].style.transform = "translateX(-100vw)translateY(13vmax)";
+   goodsname1[0].style.transform = "translateX(0vw)translateY(5vmax)";
+   goodsname1[1].style.transform = "translateX(0vw)translateY(5vmax)";
+ 
+    }else if (i < 0  &&count == 10) {
+   targetContainer.style.marginTop = "-305vh";
+  
+
+    }else if (i < 0  && count == 12) {
+    targetContainer.style.marginTop = "-395vh";
+ 
+    }
+
+
+   if (count ==0) {
+    targetContainer.style.marginTop = "0px";
+    targetNav.style.display= "none";
+   }else if (i > 0  && count == 2) {
+    targetContainer.style.marginTop = "-35vh";
+    targerContentTextBox.style.margin = ""
+    targerContentImg[0].style.margin = ""
+    targerContentImg[1].style.margin = ""
+    targerContentImg[2].style.margin = ""
+   }else if (i > 0  && count == 4) {
+    
+    targetContainer.style.marginTop = "-125vh";
+   }else if (i > 0  && count == 6) {
+    targerFixedslide_img[0].style.transform= "translateX(0vw)translateY(10vmax)";
+    targerFixedslide_img[1].style.transform= "translateX(-100vw)translateY(-15vmax)";
+
+   goodsname0[0].style.transform = "translateX(0vw)translateY(13vmax)";
+   goodsname0[1].style.transform = "translateX(0vw)translateY(13vmax)";
+   goodsname1[0].style.transform = "translateX(100vw)translateY(5vmax)";
+   goodsname1[1].style.transform = "translateX(-100vw)translateY(5vmax)";
+    }else if (i > 0  &&count == 8) {
+    targetContainer.style.marginTop = "-215vh";
+    }else if (i > 0  &&count == 10) {
+   targetContainer.style.marginTop = "-305vh";
+    }
+   
+  
+}
+
+
+
+
+    window.addEventListener("wheel", function(e){
+    e.preventDefault();
+},{passive : false});
+
+
+
+</script>
+</html>

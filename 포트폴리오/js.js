@@ -352,10 +352,10 @@ function mapBlockNone1() {
  let arrowRight = document.querySelector(".right")
  let arrowLeft = document.querySelector(".left")
  let moveCount = 0;
- 
+
  
 var autoSlide = setInterval(() => {
- moveSlide(moveCount - 1)
+    moveSlide(moveCount - 1)
 }, 2000);
 
 
@@ -372,18 +372,19 @@ function moveSlide(num){
 
  slide.classList.add("tranform0")
 if (num > -4) {
- slide.style.left=num*(700)+'px'
+ slide.style. marginLeft=num*(700)+'px'
  moveCount = num
 }
 
 setTimeout(()=> {
  if (moveCount == -3)
- {   slide.classList.remove("tranform0")
-     slide.style.left="0px"
+ {  
+      slide.classList.remove("tranform0")
+     slide.style. marginLeft="0px"
      moveCount = 0;
  }else if (moveCount == 1) {
      slide.classList.remove("tranform0")
-     slide.style.left="-1400px"
+     slide.style. marginLeft="-1400px"
      moveCount = -2;
  }
 },500)
